@@ -18,7 +18,7 @@ void createMatrix1()
     // depth of 8bit per channel. Then, set the first channel to 255 and display the result.
     cv::Mat m3_8u;
     m3_8u.create(nrows, ncols, CV_8UC3);
-    m3_8u.setTo(cv::Scalar(255));
+    m3_8u.setTo(cv::Scalar(255, 0, 0));
     // show result
     string windowName = "First steps in OpenCV (m1_8u)";
     cv::namedWindow(windowName, 1); // create window
